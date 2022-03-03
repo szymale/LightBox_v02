@@ -1,6 +1,6 @@
 ﻿namespace wLightBoxLibrary
 {
-    public class LightProcessor
+    public static class LightProcessor
     {
 
         // this class could be used to change both color and/or effect - depending on input in Rgbw lightSet
@@ -18,7 +18,7 @@
                 }
                 else
                 {
-                    throw new ArgumentOutOfRangeException(response.ReasonPhrase);
+                    throw new HttpRequestException(response.ReasonPhrase);
                 }
             }
 

@@ -1,0 +1,12 @@
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\bin\Debug\net6.0\wLightBoxLibrary.deps.json
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\bin\Debug\net6.0\wLightBoxLibrary.dll
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\bin\Debug\net6.0\ref\wLightBoxLibrary.dll
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\bin\Debug\net6.0\wLightBoxLibrary.pdb
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLightBoxLibrary.csproj.AssemblyReference.cache
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLightBoxLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLightBoxLibrary.AssemblyInfoInputs.cache
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLightBoxLibrary.AssemblyInfo.cs
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLightBoxLibrary.csproj.CoreCompileInputs.cache
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLightBoxLibrary.dll
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\ref\wLightBoxLibrary.dll
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLightBoxLibrary.pdb

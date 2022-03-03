@@ -2,6 +2,6 @@
 {
     public class ResultModel
     {
-        public Rgbw Rgbw { get; set; }
+        public Rgbw? Rgbw { get; set; }
     }
 }

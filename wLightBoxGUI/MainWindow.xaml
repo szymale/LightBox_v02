@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Slider x:Name="RedSlider" HorizontalAlignment="Left" Height="20" Margin="50,80,0,0" VerticalAlignment="Top" Width="255" Maximum="255" SmallChange="1" Background="Red" BorderBrush="#FFA75B5B" Foreground="#FF0EB109" />
+        <Slider x:Name="GreenSlider" HorizontalAlignment="Left" Height="20" Margin="50,110,0,0" VerticalAlignment="Top" Width="255" Maximum="255" SmallChange="1" Background="Green" BorderBrush="#FFA75B5B" Foreground="#FF0EB109"/>
+        <Slider x:Name="BlueSlider" HorizontalAlignment="Left" Height="20" Margin="50,140,0,0" VerticalAlignment="Top" Width="255" Maximum="255" SmallChange="1" Background="Blue" BorderBrush="#FFA75B5B" Foreground="#FF0EB109"/>
+        <Slider x:Name="WWhiteSlider" HorizontalAlignment="Left" Height="20" Margin="50,170,0,0" VerticalAlignment="Top" Width="255" Maximum="255" SmallChange="1" Background="AntiqueWhite" BorderBrush="#FFA75B5B" Foreground="#FF0EB109"/>
+        <Slider x:Name="CWhiteSlider" HorizontalAlignment="Left" Height="20" Margin="50,200,0,0" VerticalAlignment="Top" Width="255" Maximum="255" SmallChange="1" Background="White" BorderBrush="#FFA75B5B" Foreground="#FF0EB109"/>
+        <TextBox x:Name="StatusTextBox" HorizontalAlignment="Left" Margin="500,80,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top" Width="250" Height="80" AcceptsTab="True" TextAlignment="Center"/>
+        <Label Content="Red" HorizontalAlignment="Left" Margin="310,75,0,0" VerticalAlignment="Top"/>
+        <Label Content="Green" HorizontalAlignment="Left" Margin="310,105,0,0" VerticalAlignment="Top"/>
+        <Label Content="Blue" HorizontalAlignment="Left" Margin="310,135,0,0" VerticalAlignment="Top"/>
+        <Label Content="Warm White" HorizontalAlignment="Left" Margin="310,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cold White" HorizontalAlignment="Left" Margin="310,195,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="118,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Desired Color" HorizontalAlignment="Left" Margin="243,250,0,0" VerticalAlignment="Top"/>
+
 
     </Grid>
 </Window>
