@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c8871bd9-de18-49c2-9cc5-e4dde9911d12": {
+      "ProjectGuid": "c8871bd9-de18-49c2-9cc5-e4dde9911d12",
+      "DisplayName": "wLightBoxLibrary",
+      "ColorIndex": 0
+    },
+    "64b26c51-091e-4d94-9ab4-79c7f4ab7b6c": {
+      "ProjectGuid": "64b26c51-091e-4d94-9ab4-79c7f4ab7b6c",
+      "DisplayName": "wLightBoxGUI",
+      "ColorIndex": 1
+    },
+    "d02ad558-f2ce-462c-b100-d97472c35d6b": {
+      "ProjectGuid": "d02ad558-f2ce-462c-b100-d97472c35d6b",
+      "DisplayName": "wLightBox.Tests",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
