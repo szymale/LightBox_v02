@@ -21,10 +21,66 @@ namespace wLightBoxGUI
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string connectingMethod;
+        private wLightBoxLibrary.Color color = new wLightBoxLibrary.Color();
+        private Rgbw rgbw = new Rgbw();
+        
         public MainWindow()
         {
             InitializeComponent();
             ApiHelper.InitializeClient();
+        }
+
+        private void RedSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            updateDesiredColor();
+        }
+
+        private void GreenSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            updateDesiredColor();
+        }
+
+        private void BlueSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            updateDesiredColor();
+        }
+
+        private void WWhiteSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            updateDesiredColor();
+        }
+
+        private void CWhiteSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            updateDesiredColor();
+        }
+
+        private void updateDesiredColor()
+        {
+            color.RedValue = (int)RedSlider.Value;
+            color.GreenValue = (int)GreenSlider.Value;
+            color.BlueValue = (int)BlueSlider.Value;
+            color.WarmWhiteValue = (int)WWhiteSlider.Value;
+            color.ColdWhiteValue = (int)CWhiteSlider.Value;
+
+            DesiredColorTextBox.Text = color.GetHexColor(color.RedValue, color.GreenValue, color.BlueValue, color.WarmWhiteValue, color.ColdWhiteValue);
+        }
+
+        private void CheckStatusButton_Click(object sender, RoutedEventArgs e)
+        {
+            StatusTextBox.Text = StatusProcessor.LoadState(connectingMethod).ToString();
+        }
+        private async void ChangeColorButton_Click(object sender, RoutedEventArgs e)
+        {
+            rgbw.DesiredColor = DesiredColorTextBox.Text;
+            await wLightBoxLibrary.LightProcessor.ChangeLight(connectingMethod, rgbw);
+            StatusTextBox.Text = StatusProcessor.LoadState(connectingMethod).ToString();
+        }  
+
+        private void ChangeEffectButton_Click(object sender, RoutedEventArgs e)
+        {
+            rgbw.EffectId = DesiredEffectTextBox.Text.Pa;
         }
     }
 }

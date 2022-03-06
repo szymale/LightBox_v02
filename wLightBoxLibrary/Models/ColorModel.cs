@@ -22,11 +22,13 @@ namespace wLightBoxLibrary
             WarmWhiteValue = warmWhiteValue;
             ColdWhiteValue = coldWhiteValue;
         }
+        public Color() { }
 
         // this method convert int (0 - 255) to hex (00 - FF) and returns its value
         public string GetHexColor(int RedValue, int GreenValue, int BlueValue, int WarmWhiteValue, int ColdWhiteValue)
         {
             return $"{ RedValue.ToString("X2") }{ GreenValue.ToString("X2") }{ BlueValue.ToString("X2") }{ WarmWhiteValue.ToString("X2") }{ ColdWhiteValue.ToString("X2") }";
         }
+
     }
 }
