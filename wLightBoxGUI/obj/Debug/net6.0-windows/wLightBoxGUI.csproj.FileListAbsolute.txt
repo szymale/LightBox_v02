@@ -25,3 +25,4 @@ C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\obj\Debug\net6.0-windows\w
 C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\obj\Debug\net6.0-windows\ref\wLightBoxGUI.dll
 C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\obj\Debug\net6.0-windows\wLightBoxGUI.pdb
 C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\obj\Debug\net6.0-windows\wLightBoxGUI.genruntimeconfig.cache
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

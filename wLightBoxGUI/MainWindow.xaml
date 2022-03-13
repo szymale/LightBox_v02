@@ -5,32 +5,117 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wLightBoxGUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="wLightBoxControl" Height="600" Width="500">
     <Grid>
-        <Slider x:Name="RedSlider" HorizontalAlignment="Left" Height="20" Margin="50,80,0,0" VerticalAlignment="Top" Width="255" Maximum="255" SmallChange="1" ValueChanged="RedSlider_ValueChanged" />
-        <Label Content="Red" HorizontalAlignment="Left" Margin="310,75,0,0" VerticalAlignment="Top" Foreground="Red"/>
-        <Label Content="Green" HorizontalAlignment="Left" Margin="310,105,0,0" VerticalAlignment="Top" Foreground="#FF00A400"/>
-        <Slider x:Name="GreenSlider" HorizontalAlignment="Left" Height="20" Margin="50,110,0,0" VerticalAlignment="Top" Width="255" Maximum="255" SmallChange="1" ValueChanged="GreenSlider_ValueChanged"/>
-        <Label Content="Blue" HorizontalAlignment="Left" Margin="310,135,0,0" VerticalAlignment="Top" Foreground="#FF004AFF"/>
-        <Slider x:Name="BlueSlider" HorizontalAlignment="Left" Height="20" Margin="50,140,0,0" VerticalAlignment="Top" Width="255" Maximum="255" SmallChange="1" ValueChanged="BlueSlider_ValueChanged"/>
-        <Label Content="Warm White" HorizontalAlignment="Left" Margin="310,165,0,0" VerticalAlignment="Top" Foreground="#FFF98E00"/>
-        <Slider x:Name="WWhiteSlider" HorizontalAlignment="Left" Height="20" Margin="50,170,0,0" VerticalAlignment="Top" Width="255" Maximum="255" SmallChange="1" ValueChanged="WWhiteSlider_ValueChanged"/>
-        <Label Content="Cold White" HorizontalAlignment="Left" Margin="310,195,0,0" VerticalAlignment="Top"/>
-        <Slider x:Name="CWhiteSlider" HorizontalAlignment="Left" Height="20" Margin="50,200,0,0" VerticalAlignment="Top" Width="255" Maximum="255" SmallChange="1" ValueChanged="CWhiteSlider_ValueChanged"/>
-        <Label Content="Effect" HorizontalAlignment="Left" Margin="310,295,0,0" VerticalAlignment="Top"/>
-        <Slider x:Name="EffectSlider" HorizontalAlignment="Left" Height="20" Margin="50,300,0,0" VerticalAlignment="Top" Width="255" Maximum="10" SmallChange="1" />
-        <Button Content="Check Status" HorizontalAlignment="Left" Margin="582,339,0,0" VerticalAlignment="Top" Width="86" Click="CheckStatusButton_Click"/>
-        <TextBox x:Name="StatusTextBox" HorizontalAlignment="Left" Margin="500,243,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top" Width="250" Height="80" AcceptsTab="True" TextAlignment="Center"/>
-        <TextBox x:Name="DesiredColorTextBox" HorizontalAlignment="Left" Margin="118,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Desired Color" HorizontalAlignment="Left" Margin="243,240,0,0" VerticalAlignment="Top"/>
-        <Button Content="Change Color" HorizontalAlignment="Left" Margin="340,243,0,0" VerticalAlignment="Top" Width="85" Click="ChangeColorButton_Click"/>
-        <TextBox x:Name="DesiredEffectTextBox" HorizontalAlignment="Left" Margin="118,335,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Desired Effect" HorizontalAlignment="Left" Margin="243,330,0,0" VerticalAlignment="Top"/>
-        <Button Content="Change Effect" HorizontalAlignment="Left" Margin="340,333,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click"/>
-        <TextBox x:Name="ConnectingMethod" HorizontalAlignment="Left" Margin="500,47,0,0" TextWrapping="Wrap" Text="Input connecting string" VerticalAlignment="Top" Width="158"/>
-        <Button Content="Change" HorizontalAlignment="Left" Margin="665,45,0,0" VerticalAlignment="Top" Width="85"/>
-        <TextBlock HorizontalAlignment="Left" Margin="582,90,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="40" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
 
+        <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="Connecting method" FontSize="12"/>
+        <ComboBox x:Name="ConnectingMethod" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,0,5,0"
+            ItemsSource="{Binding CmbContent}"
+            Text="Input connecting method or choose from list"
+            IsEditable="true"
+            IsReadOnly="false" SelectionChanged="ConnectingMethod_SelectionChanged"/>
+        <Button Content="Change" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2"  Margin="20,0,20,0"  />
+        
+        <Label Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="Current Status" FontSize="12"/>
+        <TextBox x:Name="StatusTextBox" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" TextWrapping="Wrap" Text="Status" AcceptsTab="True" TextAlignment="Center"/>
+        <Button Content="Check Status" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="20,10,20,10" Click="CheckStatusButton_Click"/>
+        
+        <Expander Grid.Row="8" Grid.Column="1" Grid.RowSpan="14" Grid.ColumnSpan="4" Header="Color controls" IsExpanded="true" >
+            <StackPanel Margin="10">
+                <DockPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="10" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="10" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="10" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="10" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="10" />
+                        </Grid.RowDefinitions>
 
+                        <Label Content="Red" Grid.Row="1" Grid.Column="1" Foreground="Red"/>
+                        <Slider x:Name="RedSlider" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Maximum="255" SmallChange="1" ValueChanged="RedSlider_ValueChanged" />
+                        <Label Content="Green" Grid.Row="3" Grid.Column="1" Foreground="#FF00A400"/>
+                        <Slider x:Name="GreenSlider" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Maximum="255" SmallChange="1" ValueChanged="GreenSlider_ValueChanged"/>
+                        <Label Content="Blue" Grid.Row="5" Grid.Column="1" Foreground="#FF004AFF"/>
+                        <Slider x:Name="BlueSlider" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Maximum="255" SmallChange="1" ValueChanged="BlueSlider_ValueChanged"/>
+                        <Label Content="Warm White" Grid.Row="7" Grid.Column="1" Foreground="#FFF98E00"/>
+                        <Slider x:Name="WWhiteSlider" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Maximum="255" SmallChange="1" ValueChanged="WWhiteSlider_ValueChanged"/>
+                        <Label Content="Cold White" Grid.Row="9" Grid.Column="1" />
+                        <Slider x:Name="CWhiteSlider" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Maximum="255" SmallChange="1" ValueChanged="CWhiteSlider_ValueChanged"/>
+                        <Label Content="Desired Color" Grid.Row="12" Grid.Column="1"/>
+                        <TextBox x:Name="DesiredColorTextBox" Grid.Row="12" Grid.ColumnSpan="2" Grid.Column="2" TextWrapping="Wrap" Text="" Margin="5,0,0,0"/>
+                        <Button Content="Change Color" Grid.Row="12" Grid.Column="4" Click="ChangeColorButton_Click"/>
+                        <Label Content="Effect" Grid.Row="16" Grid.Column="1"/>
+                        <ComboBox x:Name="DesiredEffectComboBox" Grid.Row="16" Grid.Column="2" Grid.ColumnSpan="2" Margin="5,0,0,0" 
+                                  ItemsSource="{Binding CmbContentEffect}"
+                                  Text="Choose or input number"
+                                  IsEditable="true"
+                                  IsReadOnly="false" />
+                        <Button Content="Change Effect" Grid.Row="16" Grid.Column="4" Click="ChangeEffectButton_Click"/>
+                        <Rectangle x:Name="ColorRectangle" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="5" Fill="{Binding DesiredColorTextBox.Text}"/>
+                    </Grid>
+                </DockPanel>
+            </StackPanel>
+        </Expander>      
+     
     </Grid>
 </Window>

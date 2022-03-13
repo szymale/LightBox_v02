@@ -29,6 +29,7 @@ namespace wLightBoxGUI
         {
             InitializeComponent();
             ApiHelper.InitializeClient();
+            DataContext = new ViewModel();
         }
 
         private void RedSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -67,6 +68,12 @@ namespace wLightBoxGUI
             DesiredColorTextBox.Text = color.GetHexColor(color.RedValue, color.GreenValue, color.BlueValue, color.WarmWhiteValue, color.ColdWhiteValue);
         }
 
+        private async Task updateRgbw()
+        {
+            await LightProcessor.ChangeLight(connectingMethod, rgbw);
+            StatusTextBox.Text = StatusProcessor.LoadState(connectingMethod).ToString();
+        }
+
         private void CheckStatusButton_Click(object sender, RoutedEventArgs e)
         {
             StatusTextBox.Text = StatusProcessor.LoadState(connectingMethod).ToString();
@@ -74,13 +81,18 @@ namespace wLightBoxGUI
         private async void ChangeColorButton_Click(object sender, RoutedEventArgs e)
         {
             rgbw.DesiredColor = DesiredColorTextBox.Text;
-            await wLightBoxLibrary.LightProcessor.ChangeLight(connectingMethod, rgbw);
-            StatusTextBox.Text = StatusProcessor.LoadState(connectingMethod).ToString();
+            await updateRgbw();
         }  
 
-        private void ChangeEffectButton_Click(object sender, RoutedEventArgs e)
+        private async void ChangeEffectButton_Click(object sender, RoutedEventArgs e)
         {
-            rgbw.EffectId = DesiredEffectTextBox.Text.Pa;
+            rgbw.EffectId = int.Parse(DesiredEffectComboBox.Text);
+            await updateRgbw();
+        }
+
+        private void ConnectingMethod_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            connectingMethod = ConnectingMethod.Text;
         }
     }
 }
