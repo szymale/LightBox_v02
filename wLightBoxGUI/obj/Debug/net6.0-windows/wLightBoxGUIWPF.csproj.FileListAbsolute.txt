@@ -25,3 +25,6 @@ C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\obj\Debug\net6.0-windows\w
 C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\obj\Debug\net6.0-windows\ref\wLightBoxGUIWPF.dll
 C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\obj\Debug\net6.0-windows\wLightBoxGUIWPF.pdb
 C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\obj\Debug\net6.0-windows\wLightBoxGUIWPF.genruntimeconfig.cache
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\bin\Debug\net6.0-windows\xunit.abstractions.dll
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\bin\Debug\net6.0-windows\xunit.core.dll
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxGUI\bin\Debug\net6.0-windows\xunit.execution.dotnet.dll

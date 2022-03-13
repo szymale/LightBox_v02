@@ -8,14 +8,29 @@
     },
     "64b26c51-091e-4d94-9ab4-79c7f4ab7b6c": {
       "ProjectGuid": "64b26c51-091e-4d94-9ab4-79c7f4ab7b6c",
-      "DisplayName": "wLightBoxGUI",
+      "DisplayName": "wLightBoxGUIWPF",
       "ColorIndex": 1
     },
     "d02ad558-f2ce-462c-b100-d97472c35d6b": {
       "ProjectGuid": "d02ad558-f2ce-462c-b100-d97472c35d6b",
       "DisplayName": "wLightBox.Tests",
       "ColorIndex": 2
+    },
+    "97b0a06a-697c-4670-9ea1-b153035922d1": {
+      "ProjectGuid": "97b0a06a-697c-4670-9ea1-b153035922d1",
+      "DisplayName": "wLightBox.Tests",
+      "ColorIndex": 3
+    },
+    "f651033e-7e0a-4ea1-97d7-f07904e197c6": {
+      "ProjectGuid": "f651033e-7e0a-4ea1-97d7-f07904e197c6",
+      "DisplayName": "wLightBoxLibraryTests",
+      "ColorIndex": 4
+    },
+    "977870e6-187d-4055-884c-a97634502dc1": {
+      "ProjectGuid": "977870e6-187d-4055-884c-a97634502dc1",
+      "DisplayName": "wLightBoxControl.Tests",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 6
 }

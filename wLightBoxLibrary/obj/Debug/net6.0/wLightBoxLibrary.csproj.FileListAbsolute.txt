@@ -10,3 +10,5 @@ C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLigh
 C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLightBoxLibrary.dll
 C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\ref\wLightBoxLibrary.dll
 C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLightBoxLibrary.pdb
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\bin\Debug\net6.0\wLightBoxLibrary.runtimeconfig.json
+C:\Users\salek\source\repos\LightBox_v02\wLightBoxLibrary\obj\Debug\net6.0\wLightBoxLibrary.genruntimeconfig.cache

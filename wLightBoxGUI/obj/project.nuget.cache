@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "METWJgHRib72bp3dCxAN7KEmipN/11LBX7ypMAwAZG8ULiAvEgusjq9xxI6PJxCqx/Vr74BGJV7W/Eb8eUZ6lg==",
+  "dgSpecHash": "bfO1Z9315NrxygbCbGxwMg08VnsMMnMTgbQx1+XiLyIcgGg+PyZr+1nB88QPxESdOwmb199yGPcvleBFPQlQiQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\salek\\source\\repos\\LightBox_v02\\wLightBoxGUI\\wLightBoxGUIWPF.csproj",
   "expectedPackageFiles": [
@@ -79,7 +79,11 @@
     "C:\\Users\\salek\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\salek\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\salek\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\salek\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\salek\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\salek\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\salek\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
+    "C:\\Users\\salek\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
+    "C:\\Users\\salek\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512"
   ],
   "logs": []
 }

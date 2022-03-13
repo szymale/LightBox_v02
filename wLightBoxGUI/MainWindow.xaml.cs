@@ -21,7 +21,7 @@ namespace wLightBoxGUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string connectingMethod;
+        private string connectingMethod = "";
         private wLightBoxLibrary.Color color = new wLightBoxLibrary.Color();
         private Rgbw rgbw = new Rgbw();
         

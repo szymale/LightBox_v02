@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wLightBoxLibrary", "wLightB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wLightBoxGUIWPF", "..\wLightBoxGUI\wLightBoxGUIWPF.csproj", "{64B26C51-091E-4D94-9AB4-79C7F4AB7B6C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wLightBox.Tests", "..\wLightBox.Test\wLightBox.Tests.csproj", "{D02AD558-F2CE-462C-B100-D97472C35D6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wLightBoxControl.Tests", "..\wLightBoxControl.Tests\wLightBoxControl.Tests.csproj", "{977870E6-187D-4055-884C-A97634502DC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{64B26C51-091E-4D94-9AB4-79C7F4AB7B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64B26C51-091E-4D94-9AB4-79C7F4AB7B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64B26C51-091E-4D94-9AB4-79C7F4AB7B6C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D02AD558-F2CE-462C-B100-D97472C35D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D02AD558-F2CE-462C-B100-D97472C35D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D02AD558-F2CE-462C-B100-D97472C35D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D02AD558-F2CE-462C-B100-D97472C35D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977870E6-187D-4055-884C-A97634502DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977870E6-187D-4055-884C-A97634502DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977870E6-187D-4055-884C-A97634502DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977870E6-187D-4055-884C-A97634502DC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
