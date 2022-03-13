@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wLightBoxLibrary", "wLightBoxLibrary.csproj", "{C8871BD9-DE18-49C2-9CC5-E4DDE9911D12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wLightBoxLibrary", "wLightBoxLibrary.csproj", "{C8871BD9-DE18-49C2-9CC5-E4DDE9911D12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wLightBoxGUI", "..\wLightBoxGUI\wLightBoxGUI.csproj", "{64B26C51-091E-4D94-9AB4-79C7F4AB7B6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wLightBoxGUIWPF", "..\wLightBoxGUI\wLightBoxGUIWPF.csproj", "{64B26C51-091E-4D94-9AB4-79C7F4AB7B6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wLightBox.Tests", "..\wLightBox.Test\wLightBox.Tests.csproj", "{D02AD558-F2CE-462C-B100-D97472C35D6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wLightBox.Tests", "..\wLightBox.Test\wLightBox.Tests.csproj", "{D02AD558-F2CE-462C-B100-D97472C35D6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

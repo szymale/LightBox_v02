@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FmvXyAE1JLmi8J86QgXHekyVguocn2f9wd7OVZYS07+iHeZ4jVRC6BE2Gq1f6hDlxJqqWw1XaPfdC3OyGJvfvQ==",
+  "dgSpecHash": "METWJgHRib72bp3dCxAN7KEmipN/11LBX7ypMAwAZG8ULiAvEgusjq9xxI6PJxCqx/Vr74BGJV7W/Eb8eUZ6lg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\salek\\source\\repos\\LightBox_v02\\wLightBoxGUI\\wLightBoxGUI.csproj",
+  "projectFilePath": "C:\\Users\\salek\\source\\repos\\LightBox_v02\\wLightBoxGUI\\wLightBoxGUIWPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\salek\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\salek\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

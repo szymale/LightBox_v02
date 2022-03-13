@@ -4589,9 +4589,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\salek\\source\\repos\\LightBox_v02\\wLightBoxGUI\\wLightBoxGUI.csproj",
-      "projectName": "wLightBoxGUI",
-      "projectPath": "C:\\Users\\salek\\source\\repos\\LightBox_v02\\wLightBoxGUI\\wLightBoxGUI.csproj",
+      "projectUniqueName": "C:\\Users\\salek\\source\\repos\\LightBox_v02\\wLightBoxGUI\\wLightBoxGUIWPF.csproj",
+      "projectName": "wLightBoxGUIWPF",
+      "projectPath": "C:\\Users\\salek\\source\\repos\\LightBox_v02\\wLightBoxGUI\\wLightBoxGUIWPF.csproj",
       "packagesPath": "C:\\Users\\salek\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\salek\\source\\repos\\LightBox_v02\\wLightBoxGUI\\obj\\",
       "projectStyle": "PackageReference",
